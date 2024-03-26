@@ -40,7 +40,7 @@
         <div id="video-container">
             <video id="fullscreen-video" autoplay loop muted>
                 <!--<source src="../images/logback.mp4" type="video/mp4">-->
-                <source src="../images/sea_-_24216 (Original).mp4" type="video/mp4">
+                <source src="../images/logback.mp4" type="video/mp4">
             </video>
         </div>
 
