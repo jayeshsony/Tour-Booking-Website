@@ -1,0 +1,214 @@
+        .container {
+            perspective: 1000px; /* Added perspective for 3D effect */
+        }
+
+        .card {
+            height: fit-content;
+            width: 400px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease-in-out; /* Corrected typo */
+            margin: auto;
+            margin-top: 20px;
+           
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            border-radius: 5px;
+            background: linear-gradient(#01b3a7, #162e44);
+            box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logos img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .number {
+            margin-top: 10px;
+        }
+
+        .info {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .info h5
+        {
+            letter-spacing: 1.5px;
+            margin-top: -10px;
+            
+        }
+
+        .info p {
+            margin-top: -15px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .card-back .cvv-stripe
+        {
+           background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuX2oyaG54IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iMTAuNSIgaGVpZ2h0PSIxMC41IiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNjIpIj48bGluZSB4MT0iMCIgeT0iMCIgeDI9IjAiIHkyPSIxMC41IiBzdHJva2U9IiMwMUIzQTkiIHN0cm9rZS13aWR0aD0iNyIvPjwvcGF0dGVybj48L2RlZnM+IDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybl9qMmhueCkiIG9wYWNpdHk9IjAuMjciLz48L3N2Zz4=');
+        }
+
+        input,textarea,select
+        {
+            width: 100%;
+            height: 45px;
+            padding: 10px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 4px 8px 15px -3px #ccc;
+        }
+
+        input:focus , textarea:focus , select:focus
+        {
+            border-color: #01b3a7;
+        }
+
+        .container .row
+        {
+            margin-top: 10px;
+        }
+
+        .thirdrow-2
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button
+        {
+            background-color: #01b3a7;
+            width: 90%;
+            border: 1px solid #01b3a7;
+            border-radius: 5px;
+            color: white;
+            letter-spacing: 0.3rem;
+            padding: 10px !important;
+            box-shadow: 4px 8px 15px -3px #ccc;
+        }
+        .bookingform
+        {
+            height:100vh;
+            width: 100%;
+            padding-top: 13vh;
+            
+        }
+
+        label
+        {
+            color: #01b3a7;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            font-size: 17px;
+            padding-top:10px;
+        }
+
+        .bheader
+        {
+            background-color: white;
+            border: 2px solid #01b3a7;
+            border-radius: 10px;
+            margin-top: -50px;
+            color: #01b3a7;
+        }
+
+        .bframe
+        {
+            border: 2px solid #01b3a7;
+            border-radius: 10px;
+            cursor: default;
+             box-shadow: 0px 4px 23px -7px rgba(0,0,0,0.86);
+        }
+
+        .bframetitle
+        {
+            background-color: aliceblue;
+            padding: 10px;
+            margin-top: -20px;
+            width: fit-content;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 13px -7px rgba(0, 0, 0, 0.86);
+        }
+
+        .bframecontent
+        {
+            color: #162e44;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .internalbutton
+        {
+            background-color: #01b3a7;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: default;
+              box-shadow: 0px 4px 23px -7px rgba(0,0,0,0.86);
+        }
+
+        .internalbutton:hover
+        {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        ::-webkit-scrollbar
+        {
+            width: 10px;
+            background-color: #01b3a7;
+        }
+
+        ::-webkit-scrollbar-thumb
+        {
+            background: linear-gradient(#01b3a7,#162e44);
+        }
+        
+        .secondpart
+        {
+            height: 100vh;
+            padding-top: 10vh;
+        }
+        
+        .pp
+        {
+            font-family: montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        
+        
+      

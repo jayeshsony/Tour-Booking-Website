@@ -1,0 +1,103 @@
+/* css for footer */
+*
+{
+    font-family: 'raleway';
+    line-height: 1.2rem;
+}
+.section {
+    margin-bottom: 400px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.footer {
+    background-color: #162e44;
+    height: fit-content;
+    position: fixed;
+    bottom: 0%;
+    z-index: -1;
+    color: white;
+    cursor: default;
+    line-height: 2rem !important;
+    padding-top: 50px;
+}
+
+.foo {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright {
+    position: relative;
+    color: grey;
+}
+
+.copyright li>i {
+    color: gray;
+}
+
+.footer ul>li,
+a:hover,
+i:hover {
+    color: #01b3a7;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    /* Styles for smartphones go here */
+    .typing {
+        margin-top: auto;
+    }
+
+    .footer {
+        height: 72vh;
+        overflow-y: hidden;
+    }
+
+    .copyright {
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+
+    .section {
+        margin-bottom: 68vh;
+    }
+
+    .product {
+        margin: 0% auto;
+        width: 90%;
+    }
+
+
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+
+    /* Styles for smartphones go here */
+    .footer {
+        height: 58vh;
+        overflow-y: hidden;
+    }
+
+    .section {
+        margin-bottom: 58vh;
+    }
+
+    .r-honeycomb
+    {
+        margin-top: -150px;
+    }
+}
+
+.pp {
+    background-color: #fff;
+}
+
+

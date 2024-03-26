@@ -1,0 +1,76 @@
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h2 , .infocontent h2
+{
+    color:#01b3a7;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 2.2rem;
+    font-family: elnath;
+    font-size: 30px;
+}
+
+.main-content p, .infocontent p
+{
+    margin-top: 30px;
+    line-height: 1.7rem;
+    font-family: raleway;
+    font-weight: 500;
+    font-size: 18px !important;
+    letter-spacing: 1.5px;
+}
+
+.main-img
+{
+    position: relative;
+}
+
+.image
+{
+    position: absolute;
+    margin-left: -550px;
+    margin-top: 50px;
+}
+
+.div
+{
+    margin: 0 auto;
+    width: 60px;
+    height: 30px;
+    margin-top: -32px;
+    background-color: #01b3a7;
+    clip-path:polygon(100% 0,0 0,50% 100%);
+    padding: 1px 20px;
+}
+
+.infocircle
+{
+    height: 20px;
+    background-color: #01b3a7;
+    clip-path:polygon(100% 53%,0 0,0 100%);
+    width: 20px;
+    margin-top: -100px;
+}
+
+.infocontent
+{
+    margin-top: 20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #01b3a7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#01b3a7, #162e44);
+
+
+}

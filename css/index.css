@@ -1,0 +1,459 @@
+* {
+    overflow-x: hidden;
+    margin: 0%;
+    scroll-behavior: smooth;
+    padding: 0%;
+    box-sizing: border-box;
+    line-height: normal !important;
+   
+}
+
+
+.html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #01b3a7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#01b3a7, #162e44);
+
+
+}
+
+/* css of parallex effect starts */
+.parallex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.parallex img {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+
+}
+
+
+.parallexlogo img {
+
+    width: 30%;
+    height: 25%;
+    margin-left: 30%;
+
+}
+
+/* css of parallex effect ends */
+
+
+
+
+/*css for information div*/
+.information {
+    background: linear-gradient(rgba(0, 51, 41, 255), white);
+    font-family: 'raleway';
+}
+
+.information-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.information-button a {
+    color: #162e44;
+    border-top: 1px solid #162e44;
+    border-bottom: 1px solid #162e44;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 5px 40px;
+    cursor: pointer;
+
+}
+
+.panel {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 0.4s ease-out;
+}
+
+/*css for information ends*/
+
+
+/* css for honey comb left-div starts */
+.honey-comb {
+
+    background-color: white;
+    /* overflow: hidden; */
+    /* background-color: aliceblue; */
+}
+
+.hexagon {
+    width: 15vw;
+    /* 20% of the viewport width */
+    height: 15vw;
+    /* 20% of the viewport width */
+    background: linear-gradient(#01b3a7, #162e44);
+    /* Background color for the hexagon */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    margin-left: 5px;
+    color: aliceblue; 
+    font-size: large;
+    font-weight: 600;
+}
+
+.hexagon-2 {
+    width: 15vw;
+    /* 20% of the viewport width */
+    height: 15vw;
+    /* 20% of the viewport width */
+    background: #01b3a7;
+    /* Background color for the hexagon */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    margin-left: 5px;
+    filter: blur(50px);
+}
+
+.hexa-top1 {
+    /* margin-top: 150px; */
+    margin-left: -15px;
+}
+
+.hexa-top {
+    margin-left: -115px;
+    margin-top: -40px;
+}
+
+.hexa-mid {
+    margin-top: -40px;
+    margin-left: -15px;
+}
+
+.hexa-low {
+    margin-left: -115px;
+    margin-top: -40px;
+}
+
+.hexa-low2 {
+    margin-top: -40px;
+    margin-left: -15px;
+
+}
+/* css for honey comb leftdiv ends */
+
+/*css for honey comb (typinng effect) starts*/
+
+.typing {
+    margin-top: 200px;
+}
+
+.typing .text {
+    width: fit-content;
+    position: relative;
+    color: #01b3a7;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.typing .text.first-text {
+    color: #162e44;
+}
+
+.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid #01b3a7;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+.typebutton1 {
+    border: 2px solid #01b3a7;
+    color: #01b3a7;
+    padding: 20px 40px;
+    font-size: larger;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+        display: inline-block;
+}
+
+.typebutton1:hover {
+    border: 2px solid #01b3a7;
+    color: white;
+    background-color: #01b3a7;
+    transform: scale(1.1);
+}
+
+.typebutton2 {
+    margin-left: 10px;
+    border: 2px solid #01b3a7;
+    color: white;
+    padding: 20px 40px;
+    font-size: larger;
+    background-color: #01b3a7;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+        display: inline-block;
+}
+
+.typebutton2:hover {
+    border: 2px solid #01b3a7;
+    color: #01b3a7;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+/*css for honey comb (typinng effect) endss*/
+
+@media (max-width:575px) {
+    .parallex {
+        height: 55vh;
+    }
+
+    .parallex img {
+        height: 55vh;
+    }
+
+    .privacy {
+        margin-top: -40px;
+    }
+
+    .typing .text {
+
+        font-size: 40px;
+
+    }
+
+}
+
+@media (min-width:576px) and (max-width:700px) {
+    .parallex {
+        height: 65vh;
+    }
+
+    .parallex img {
+        height: 65vh;
+    }
+
+}
+
+@media (min-width:701px) and (max-width:800px) {
+    .parallex {
+        height: 80vh;
+    }
+
+    .parallex img {
+        height: 80vh;
+    }
+}
+
+@media (min-width:801px) and (max-width:900px) {
+    .parallex {
+        height: 90vh;
+    }
+
+    .parallex img {
+        height: 90vh;
+    }
+}
+
+
+@media (min-width: 950px) and (max-width: 1199.98px) {
+    .hexagon {
+        width: 15vw;
+        /* 20% of the viewport width */
+        height: 15vw;
+        /* 20% of the viewport width */
+        background: linear-gradient(#01b3a7, #162e44);
+        /* Background color for the hexagon */
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        position: relative;
+        margin-left: 5px;
+        color: aliceblue; 
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .hexagon-2 {
+        width: 15vw;
+        /* 20% of the viewport width */
+        height: 15vw;
+        /* 20% of the viewport width */
+        background: #01b3a7;
+        /* Background color for the hexagon */
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        position: relative;
+        margin-left: 5px;
+        filter: blur(50px);
+    }
+
+    .hexa-top1 {
+        /* margin-top: 150px; */
+        margin-left: -15px;
+    }
+
+    .hexa-top {
+        margin-left: -100px;
+        margin-top: -35px;
+    }
+
+    .hexa-mid {
+        margin-top: -35px;
+        margin-left: -15px;
+    }
+
+    .hexa-low {
+        margin-left: -100px;
+        margin-top: -35px;
+    }
+
+    .hexa-low2 {
+        margin-top: -35px;
+        margin-left: -15px;
+    }
+
+}
+
+/* css for product */
+
+
+.product {
+    position: relative;
+    background-color: white;
+    border: 2px solid #01b3a7;
+    overflow: hidden;
+        height: 500px;
+  
+}
+
+.row>* {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+.pimage {
+    overflow: hidden;
+}
+
+.pimage img
+{   
+  height: 500px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.pimage img:hover {
+    transform: scale(1.3);
+}
+
+.pcontent {
+    margin: 0% auto;
+    width: 90%;
+    
+}
+
+
+.pprice {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: #01b3a7;
+    clip-path: polygon(100% 0, 100% 100%, 43% 100%, 0 56%, 0 0);
+    padding: 10px;
+}
+
+.pprice p {
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.pbutton1 {
+    border: 2px solid #01b3a7;
+    color: #01b3a7;
+    padding: 10px 20px;
+    background-color: white;
+    transition: all 0.6s ease-in-out;
+display: inline-block;
+}
+
+.pbutton1:hover {
+  
+    background-color: #01b3a7;
+    transform: scale(1.1);
+}
+
+.pbutton2 {
+    margin-left: 10px;
+    border: 2px solid #01b3a7;
+    color: white;
+    padding: 10px 20px;
+    background-color: #01b3a7;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pbutton2:hover {
+    border: 2px solid #01b3a7;
+    color: #01b3a7;
+    padding: 10px 20px;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+/* css product ends */
+
